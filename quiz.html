@@ -6,11 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="quiz.css ">
   <title>Quiz Application</title>
+  
 </head>
 <body>
   <div class="container">
-
+    <div class="leftSide">
+      <img src="images/FINAL LOGO.PNG" alt="quiz logo" class="tilt"/>
+    </div>
+    
+    <div class="rightSide">
+      <h1>Welcome to Online Quiz</h1>
+      <h2>Features:-</h2>
+      <ul>
+        <li>10 Questins(10 sec each)</li>
+        <li>200 Seconds timer</li>
+        <li>Random Questions</li>
+        <li>Get Results Any Time</li>
+      </ul>
+      
+      <a href="question.html" target="_blank">Start the Quiz</a>
+    </div>
   </div>
   <script src="quiz.js"></script>
+
 </body>
+<script src="js/tilt.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+  $(".tilt").tilt({
+      scale: 1.2,
+    });
+</script>
 </html>
